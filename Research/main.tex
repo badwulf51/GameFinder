@@ -1,0 +1,55 @@
+\documentclass[a4paper]{scrreprt}
+
+%% Language and font encodings and page settings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{minted}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=2cm]{geometry}
+\usepackage{float}
+
+%% Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[allcolors=blue]{hyperref}
+\graphicspath{{./img/}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+%% BibLaTeX settings
+\usepackage[backend=biber]{biblatex}
+\addbibresource{main.bib}
+
+%% Header page information
+\title{\href{https://github.com/cian2009/GestureBasedProject}{Project for Gesture Based UI Development}}
+\subtitle{"GameFinder, a voice controlled application using the Alexa voice assistant"}
+
+\author{
+  \href{https://github.com/cian2009}{Gannon, Cian}\\
+  \texttt{g00337022@gmit.ie}
+  \and
+  \href{https://github.com/badwulf51}{Malley O, Aron}\\
+  \texttt{g00327019@gmit.ie}
+}
+
+%% Render title page
+\titlehead{\centering\includegraphics[width=10cm]{img/APP_ICON_LARGE.png}}
+
+\begin{document}
+
+%% Create title using header page information above
+\maketitle
+
+%% Section imports
+\input{sections/1.tex}
+\input{sections/2.tex}
+\input{sections/3.tex}
+\input{sections/4.tex}
+\input{sections/5.tex}
+
+\end{document}

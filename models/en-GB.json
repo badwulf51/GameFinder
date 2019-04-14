@@ -1,0 +1,55 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "game finder",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "FindGameIntent",
+          "slots": [
+            {
+              "name": "game",
+              "type": "AMAZON.VideoGame"
+            }
+          ],
+          "samples": [
+            "what is {game}"
+          ]
+        },
+        {
+          "name": "FindPersonIntent",
+          "slots": [
+            {
+              "name": "person",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "who is {person}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "1"
+}
